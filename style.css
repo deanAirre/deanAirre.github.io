@@ -103,7 +103,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: left top;
+  object-position: center;
 }
 
 .media {
@@ -116,6 +116,9 @@ body {
 @media (max-width: 30rem) {
   .media { grid-template-columns: 1fr; }
 }
+
+.thumb.top img { object-position: left top; }
+.thumb.fit img { object-fit: contain; }
 
 .media .thumb { max-width: 12rem; margin: 0 auto; }
 
