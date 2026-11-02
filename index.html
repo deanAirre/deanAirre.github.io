@@ -3,13 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:">
   <title>Developer's Notes</title>
   <link rel="stylesheet" href="style.css">
-  <script>
-  document.documentElement.dataset.theme =
-    localStorage.getItem('theme') ||
-    (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-</script>
+  <script src="scripts/theme.js"></script>
 </head>
 <body>
   <button id="theme" aria-label="Toggle dark mode"> Dark || Light </button>
@@ -31,7 +29,7 @@
       </a>
       <a class="card" href="about/">
         <div class="thumb">
-          <img src="img/ibm.jpg" alt="">
+          <img src="img/aha.jpg" alt="Aha from HSR (2020) game">
         </div>
         <div class="text">
           <small>About · 7 days ago</small>
@@ -41,26 +39,7 @@
       </a>
     <!-- copy the <a class="card"> block for more -->
   </main>
-
-  <script>
-    const q = document.getElementById('q');
-    q.addEventListener('input', () => {
-      const t = q.value.toLowerCase();
-      document.querySelectorAll('.card').forEach(c => {
-        c.hidden = !c.textContent.toLowerCase().includes(t);
-      });
-    });
-    const btn = document.getElementById('theme');
-    const label = () => btn.textContent =
-      document.documentElement.dataset.theme === 'dark' ? 'Light' : 'Dark';
-    label();
-    btn.addEventListener('click', () => {
-      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-      document.documentElement.dataset.theme = next;
-      localStorage.setItem('theme', next);
-      label();
-    });
-    
-  </script>
+  <p id="empty" hidden>No results.</p>
+  <script src="scripts/app.js"></script>
 </body>
 </html>
