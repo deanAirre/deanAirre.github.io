@@ -110,3 +110,6 @@ body {
   .media { grid-template-columns: 1fr; }
 }
 
+.media .thumb { max-width: 12rem; margin: 0 auto; }
+
+.feed:first-child { padding-top: 4rem; }
