@@ -4,52 +4,56 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:">
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:">
   <title>Developer's Notes</title>
   <link rel="stylesheet" href="style.css">
   <script src="scripts/theme.js"></script>
 </head>
 <body>
-  <button id="theme" aria-label="Toggle dark mode"> Dark || Light </button>
+  <button id="theme" aria-label="Toggle dark mode">Dark</button>
+
   <header class="hero">
     <h1>Developer's Notes</h1>
     <input id="q" type="search" placeholder="Search..." aria-label="Search">
   </header>
 
   <main class="feed">
-      <a class="card" href="notes/">
-        <div class="thumb right">
-          <img src="img/ibm.jpg" alt="IBM thinkpad, that's all">
-        </div>
-        <div class="text">
-          <small>Notes · 2 days ago</small>
-          <h2>Larpers Notes</h2>
-          <p>This is where I larp the most</p>
-        </div>
-      </a>
-      <a class="card" href="about/">
-        <div class="thumb">
-          
-        </div>
-        <div class="text">
-          <small>About · 7 days ago</small>
-          <h2>About</h2>
-          <p>About this site I made to larp</p>
-        </div>
-      </a>
-      <a class="card" href="links/">
-        <div class="thumb top">
-          <img src="img/list.png" alt="html illustration of links">
-        </div>
-        <div class="text">
-          <small>Link · 365+ days ago</small>
-          <h2>Links</h2>
-          <p>Index of important links</p>
-        </div>
-      </a>
-    <!-- copy the <a class="card"> block for more -->
+    <a class="card" href="notes/">
+      <div class="thumb right">
+        <img src="img/ibm.jpg" alt="IBM ThinkPad logo">
+      </div>
+      <div class="text">
+        <small>Notes · 2 days ago</small>
+        <h2>Larpers Notes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </a>
+
+    <a class="card" href="about/">
+      <div class="thumb">
+        <img src="img/aha.jpg" alt="Aha from HSR (2020) game">
+      </div>
+      <div class="text">
+        <small>About · 7 days ago</small>
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </a>
+
+    <a class="card" href="links/">
+      <div class="thumb top">
+        <img src="img/list.png" alt="HTML code for a list of links">
+      </div>
+      <div class="text">
+        <small>Link · 365+ days ago</small>
+        <h2>Links</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </a>
   </main>
-  <p id="empty" hidden> What are you looking for? No result (≧ᗜ≦)</p>
+
+  <p id="empty" hidden>What are you looking for? No result (≧ᗜ≦)</p>
+
   <script src="scripts/app.js"></script>
 </body>
 </html>
