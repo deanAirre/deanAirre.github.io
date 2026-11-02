@@ -19,7 +19,7 @@ a { color: inherit; }
 .hero h1 { margin: 0 0 1.5rem; font-size: 2.5rem; }
 
 #q {
-  width: min(100%, 36rem);
+  width: min(100%, 34rem);
   box-sizing: border-box;
   padding: .5rem .7rem;
   border: 1px solid CanvasText;
@@ -90,3 +90,5 @@ a { color: inherit; }
   .media { grid-template-columns: 1fr; }
   .media .thumb { max-width: 12rem; }
 }
+
+.thumb.right img { object-position: 70% center; }
