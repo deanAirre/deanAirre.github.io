@@ -119,10 +119,3 @@ body {
 .media .thumb { max-width: 12rem; margin: 0 auto; }
 
 .feed:first-child { padding-top: 4rem; }
-
-.thumb.zoom img {
-  object-fit: cover;
-  object-position: left center;
-  transform: scale(2.5);
-  transform-origin: left center;
-}
