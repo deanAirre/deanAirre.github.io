@@ -13,6 +13,11 @@
   --muted: #9aa0a6;
 }
 
+:root[data-theme="dark"] body {
+  background: #0d1f3f url("img/bg-night.svg") no-repeat center bottom / cover;
+  background-attachment: fixed;
+}
+
 #theme {
   position: fixed;
   top: 1rem;
@@ -30,8 +35,9 @@
 body {
   margin: 0;
   font: 16px/1.5 system-ui, sans-serif;
-  background: var(--bg);
   color: var(--text);
+  background: #38b6f8 url("img/bg.svg") no-repeat center bottom / cover;
+  background-attachment: fixed;
 }
 
 .hero {
