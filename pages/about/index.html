@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Security-Policy"
-                content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:">
-        <title>About</title>
-        <link rel="stylesheet" href="../style.css">
-        <script src="../scripts/theme.js"></script>
-    </head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:">
+<title>About</title>
+<link rel="stylesheet" href="../../style.css">
+<script src="../../scripts/theme.js"></script>
 </head>
 <body>
-    <header class="hero"><h1>About</h1></header>
-    <main class="feed">
-    <div class="media">
-        <div class="thumb">
-            <img src="../../img/hutao.png" alt="Aha from HSR (2020) game">
-        </div>
-        <div class="text">
-            <p>my name is Sean, I larp as programmer all day. I use thinkpad and linux just to look <strong>cool</strong></p>
-            <p>I use AI to style this site because I have no skill even in basic html and css</p>
-            <p><strong>Enjoy your visit</strong></p>
-        </div>
-    </div>
-    </main>
+<header class="hero"><h1>About</h1></header>
+<main class="feed">
+
+<div class="media">
+<div class="thumb">
+<img src="../../img/hutao.png" alt="Aha from HSR (2020) game">
+</div>
+<div class="text">
+<p>my name is Sean, I larp as programmer all day. I use thinkpad and linux just to look <strong>cool</strong></p>
+<p>I use AI to style this site because I have no skill even in basic html and css</p>
+<p><strong>Enjoy your visit</strong></p>
+</div>
+</div>
+
+<h2>Portfolio</h2>
+
+<!-- Project hosted inside this repo (built files in projects/project-one/) -->
+<a class="card" href="../../projects/project-one/">
+<div class="thumb">
+<!-- <img src="../../img/project-one.png" alt="Screenshot of Project One"> -->
+</div>
+<div class="text">
+<small>Web app · 2026</small>
+<h2>Project One</h2>
+<p>Short description of what it does and what it is built with. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+</div>
+</a>
+
+<!-- Project hosted somewhere else (own repo, server, or Pi) -->
+<a class="card" href="https://example.com/" target="_blank" rel="noopener noreferrer">
+<div class="thumb">
+<!-- <img src="../../img/project-two.png" alt="Screenshot of Project Two"> -->
+</div>
+<div class="text">
+<small>Web app · External · 2025</small>
+<h2>Project Two</h2>
+<p>Short description. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</a>
+
+<!-- A4 document page -->
+<a class="card" href="../portfolio/resume/">
+<div class="thumb">
+</div>
+<div class="text">
+<small>Document · A4</small>
+<h2>Resume</h2>
+<p>Printable A4 portfolio sheets. Press Ctrl+P on that page to save as PDF.</p>
+</div>
+</a>
+
+</main>
 </body>
 </html>
