@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Developer's Notes</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+  document.documentElement.dataset.theme =
+    localStorage.getItem('theme') ||
+    (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+</script>
 </head>
 <body>
+  <button id="theme" aria-label="Toggle dark mode"> Dark || Light </button>
   <header class="hero">
     <h1>Developer's Notes</h1>
     <input id="q" type="search" placeholder="Search..." aria-label="Search">
@@ -34,6 +40,17 @@
         c.hidden = !c.textContent.toLowerCase().includes(t);
       });
     });
+    const btn = document.getElementById('theme');
+    const label = () => btn.textContent =
+      document.documentElement.dataset.theme === 'dark' ? 'Light' : 'Dark';
+    label();
+    btn.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem('theme', next);
+      label();
+    });
+    
   </script>
 </body>
 </html>

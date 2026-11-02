@@ -1,10 +1,32 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --bg: #f1f3f4;
   --card: #fff;
   --text: #202124;
   --muted: #5f6368;
 }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #202124;
+  --card: #303134;
+  --text: #e8eaed;
+  --muted: #9aa0a6;
+}
+
+#theme {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
 @media (prefers-color-scheme: dark) {
   :root { --bg: #202124; --card: #303134; --text: #e8eaed; --muted: #9aa0a6; }
 }
@@ -20,9 +42,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1.5rem;
-  padding: 18vh 1rem 3rem;
+  min-height: 80svh;
+  padding: 0 1rem;
 }
+
 .hero h1 { margin: 0; font-size: clamp(2rem, 8vw, 3.5rem); font-weight: 500; }
 
 #q {
@@ -39,7 +64,8 @@ body {
 
 .feed {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 20rem));
+  justify-content: center;
   gap: 1rem;
   max-width: 64rem;
   margin: 0 auto;
