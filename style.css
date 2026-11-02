@@ -22,6 +22,11 @@
   --muted: #9aa0a6;
 }
 
+.text p {
+  text-align: justify;
+  hyphens: auto;
+}
+
 :root[data-theme="dark"] body {
   background: #0d1f3f url("img/bg-night.svg") no-repeat center bottom / cover;
   background-attachment: fixed;
@@ -125,10 +130,14 @@ body {
 @media (max-width: 30rem) {
   .media { grid-template-columns: 1fr; }
 }
+@media (min-width: 30rem) {
+  .media .text p { text-align: justify; }
+}
 
 .thumb.top img { object-position: left top; }
 .thumb.fit img { object-fit: contain; }
 
 .media .thumb { max-width: 12rem; margin: 0 auto; }
+.media .text p { text-align: justify; hyphens: auto; }
 
 .feed:first-child { padding-top: 4rem; }
