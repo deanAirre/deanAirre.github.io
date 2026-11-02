@@ -1,9 +1,18 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("fonts/plus-jakarta-sans-latin-wght-normal.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
   --bg: #f1f3f4;
   --card: #fff;
   --text: #202124;
   --muted: #5f6368;
+   font: 16px/1.5 "Plus Jakarta Sans", system-ui, sans-serif;
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
