@@ -67,7 +67,10 @@ body {
 }
 
 .card {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  align-items: center;
   padding: 1rem 1.2rem;
   background: var(--card);
   border-radius: 12px;
@@ -75,6 +78,19 @@ body {
   text-decoration: none;
   box-shadow: 0 1px 3px rgba(0,0,0,.2);
   transition: transform .15s;
+}
+.thumb {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--bg);
+  overflow: hidden;
+}
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .card:hover { transform: translateY(-2px); }
 .card small { color: var(--muted); }
