@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy"
-            content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:">
-    <title>Links</title>
-    <script src="../scripts/theme.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:">
+  <title>Links</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../scripts/theme.js"></script>
 </head>
 <body>
-    <header class="hero"><h1>Link</h1></header>
+  <header class="hero"><h1>Links</h1></header>
+
+  <main class="feed">
     <p>This is a test</p>
 
     <ul>
-        <li>First item</li>
-        <li>Second item</li>
-        <li>Third item</li>
+      <li>First item</li>
+      <li>Second item</li>
     </ul>
 
+    <a class="card-flat" href="https://caolan.uk/notes/2026-03-13_my_thinkpad_x60/" target="_blank" rel="noopener noreferrer">
+      <div class="thumb">
+        <img src="../img/caolan_x60.webp" alt="Multicolour IBM logo on the corner of a closed ThinkPad X60">
+      </div>
+      <div class="text">
+        <small>Honorable Mentioned Blog | caolan.uk · 2 Nov 2026</small>
+        <h2>My ThinkPad X60</h2>
+        <p>A 20-year-old laptop that's still in daily use.</p>
+      </div>
+    </a>
+  </main>
 </body>
 </html>
