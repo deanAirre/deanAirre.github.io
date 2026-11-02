@@ -23,8 +23,8 @@
   top: 1rem;
   right: 1rem;
   padding: .5rem 1rem;
+  border-radius: 100px;
   border: 0;
-  border-radius: 999px;
   background: var(--card);
   color: var(--text);
   font: inherit;
@@ -54,7 +54,7 @@ body {
   width: min(100%, 36rem);
   padding: .8rem 1.2rem;
   border: 0;
-  border-radius: 999px;
+  border-radius: 500px;
   background: var(--card);
   color: inherit;
   font-size: 1rem;
