@@ -2,20 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PortDe</title>
+  <title>Developer's Notes</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Welcome</h1>
-    <p>this is a website for me to keep my programming notes</p>
-    <ul>
-      <li><a href="notes/">Notes</a></li>
-      <li><a href="links/">Links</a></li>
-       <li><a href="about/">About Me</a></li>
-    </ul>
+  <header class="hero">
+    <h1>Developer's Notes</h1>
+    <input id="q" type="search" placeholder="Search..." aria-label="Search">
+  </header>
+
+  <main class="feed">
+    <a class="card" href="notes/">
+      <small>Notes · 2 days ago</small>
+      <h2>Card title</h2>
+      <p>Short description of the thing this card links to.</p>
+    </a>
+    <a class="card" href="links/">
+      <small>Links</small>
+      <h2>Another card</h2>
+      <p>Another short description.</p>
+    </a>
+    <!-- copy the <a class="card"> block for more -->
   </main>
+
+  <script>
+    const q = document.getElementById('q');
+    q.addEventListener('input', () => {
+      const t = q.value.toLowerCase();
+      document.querySelectorAll('.card').forEach(c => {
+        c.hidden = !c.textContent.toLowerCase().includes(t);
+      });
+    });
+  </script>
 </body>
 </html>
