@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:">
+<title>Article Title</title>
+<link rel="stylesheet" href="../../style.css">
+<script src="../../scripts/theme.js"></script>
+<style>
+.a4-page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  margin: 2rem auto;
+  box-sizing: border-box;
+  background: var(--page-bg, #fff);
+  color: var(--page-text, #111);
+}
+.a4-page h1 { font-size: 1.8rem; margin: 0 0 0.25em; }
+.a4-page h2.subheading {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--muted, #666);
+  margin: 0 0 1.5em;
+}
+.a4-page p { line-height: 1.6; margin: 0 0 1em; }
+
+@media print {
+  body { margin: 0; }
+  .a4-page {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 20mm;
+    box-shadow: none;
+  }
+}
+</style>
+</head>
+<body>
+<article class="a4-page">
+<h1>Article heading placeholder</h1>
+<h2 class="subheading">Subheading or byline placeholder</h2>
+<p>First paragraph placeholder. Replace with the article's opening content.</p>
+<p>Second paragraph placeholder. Keep paragraphs short enough to read comfortably on an A4 sheet.</p>
+<p>Third paragraph placeholder, for whatever closes out the piece.</p>
+</article>
+</body>
+</html>
