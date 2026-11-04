@@ -208,3 +208,5 @@ body.article { background: #e8e8e8; }
     box-shadow: none;
   }
 }
+
+@view-transition { navigation: auto; }
