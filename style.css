@@ -135,7 +135,7 @@ a { color: inherit; }
 }
 .btn:hover { background: CanvasText; color: Canvas; }
 
-.card.static:hover { background: none; color: inherit; }
+.card.static:hover { background: none; color: inherit; outline: 2px solid CanvasText; }
 .card.static p {
   display: block;
   overflow: visible;
@@ -210,3 +210,9 @@ body.article { background: #e8e8e8; }
 }
 
 @view-transition { navigation: auto; }
+
+a:not([href]) {
+  text-decoration: underline;
+  cursor: default;
+  opacity: .6;
+}
